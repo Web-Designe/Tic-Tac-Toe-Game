@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, #ff105f, #ffad06);
+  border: 20px solid white;
+  border-style: double;
+  /* box-sizing: border-box; */
+  /* background-position: center; */
+  /* position: ; */
+}
+section {
+  text-align: center;
+  min-height: calc(100vh-20px);
+}
+.game-title {
+  font-size: 60px;
+  color: black;
+  margin: 10px auto;
+}
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  width: 417px;
+  margin: 10px auto;
+  background-color: white;
+  color: #581504;
+  box-shadow: 0 0 20px 9px #0c0604d0;
+}
+.cell {
+  font-family: "Permanent Marker", cursive;
+  width: 135px;
+  height: 135px;
+  box-shadow: 0 0 20px 9px #fa4a04f6;
+  border: 3px solid white;
+  cursor: pointer;
+  line-height: 135px;
+  font-size: 60px;
+}
+.cell:hover {
+  background: radial-gradient(#d6d7e4, #e6aeae);
+}
+.game-status {
+  font-size: 40px;
+  color: black;
+  margin: 20px auto;
+}
+.game-restart {
+  background: white;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  color: black;
+  box-shadow: 0 0 20px 9px #0c0604d0;
+  border: 2px solid white;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: transform .2s;
+  
+}
+.game-restart:hover {
+
+  transform: scale(1.2);
+}
+.imgbox img{
+
+  width: 0;
+  transition: width 1s ease-in-out;
+  background-size: cover;
+
+}
+
+@media only screen and (max-width: 650px) {
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #ff105f, #ffad06);
+    border: 20px solid white;
+    border-style: double;
+    box-sizing: border-box;
+    /* position: fixed; */
+    background-position: center;
+    background: position y 10px;
+  }
+  .game-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 256px;
+    margin: 10px auto;
+    background-color: white;
+    color: #581504;
+    box-shadow: 0 0 20px 9px #0c0604d0;
+  }
+  .cell {
+    font-family: "Permanent Marker", cursive;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 0 20px 9px #fa4a04f6;
+    border: 3px solid white;
+    cursor: pointer;
+    line-height: 100px;
+    font-size: 60px;
+  }
+  .game-restart {
+    margin-top: 10%;
+    transition: transform .2s;
+  }
+}
